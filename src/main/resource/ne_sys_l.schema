@@ -1,0 +1,9 @@
+message ne_sys_l
+{
+	required int32  city_id;
+	optional binary city_name (UTF8);
+	repeated group time {
+		required binary start_time;
+		required int32  millisecond;
+	}
+}
